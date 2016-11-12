@@ -1,0 +1,1 @@
+var app = angular.module("vitaApp", ["ngRoute", "ngAnimate", "ngTouch", "ngFader", "ui.bootstrap"]);

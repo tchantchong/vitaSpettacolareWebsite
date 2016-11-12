@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+		<script src="https://use.fontawesome.com/7cc00fd9cc.js"></script>
+		<link rel="stylesheet" href="css/vita.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/ngFader.css">
+	</head>
+	<body ng-app="vitaApp">
+		<div class="container-fluid" ng-controller="mainCtrl">
+				<div>
+				<nav class="navbar navbar-default navbar-static-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-3 col-md-3 col-lg-3">
+								<a href="#/">
+									<img src="images/menu/horizontal_logo.png" style="width: 100%;">
+								</a>
+							</div>
+							<div class="col-xs-9 col-md-9 col-lg-9">
+								<div class="row menu-top">
+									<div class="col-xs-4 col-md-3 col-lg-3">
+										<a href="https://www.facebook.com/vitaspettacolare/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> @vitaspettacolare</a>
+									</div>
+									<div class="col-xs-4 col-md-3 col-lg-3 whatsapp-icon">
+										<i class="fa fa-whatsapp" aria-hidden="true"> (11)99534-6786</i>
+									</div>
+									<div class="col-xs-4 col-md-3 col-lg-3 phone-icon">
+										<i class="fa fa-phone" aria-hidden="true"> (11)4508-4090</i>
+									</div>
+									<div class="col-xs-4 col-md-3 col-lg-3">
+										<button class="btn btn-info" ng-click="openMailModal()">
+											<i class="fa fa-envelope-o" aria-hidden="true"></i> contato@vitaspettacolare.com.br
+										</button>
+									</div>
+								</div>
+								<div class="row menu-bottom">
+									<div class="col-xs-2 col-md-2 col-lg-2">
+										<a href="#/">Home</a>
+									</div>
+									<div class="col-xs-3 col-md-3 col-lg-3">
+										<a href="#/who">Quem Somos</a>
+									</div>
+									<div class="col-xs-2 col-md-2 col-lg-2">
+										<a href="#/london">Álbuns</a>
+									</div>
+									<div class="col-xs-3 col-md-3 col-lg-3">
+										<a href="#/canada">Viagens Marcadas</a>
+									</div>
+									<div class="col-xs-2 col-md-2 col-lg-2">
+										<a href="#/london">Ideias</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<ng-fader></ng-fader>
+			<ng-view></ng-view>
+			<div class="footer-divisor"></div>
+		</div>
+		<script src="js/app.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/router.js"></script>
+		<script src="js/ngFader.js"></script>
+		<script src="js/ui-bootstrap-custom-1.3.3.min.js"></script>
+		<script src="js/ui-bootstrap-custom-tpls-1.3.3.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<div class="form-head">
+  <span class="form-title">Formulário de Email</span>
+  <button class="btn btn-default form-close-button" ng-click="close()"> X </button>
+</div>
+<div>
+  <form class="form" name="formulario" action="http://scripts.redehost.com.br/formmail.aspx" method="post">
+    <input type=hidden name="destino" value="contato@vitaspettacolare.com.br">
+    <input type=hidden name="enviado" value="http://www.vitaspettacolare.com.br">
+    <p class="col-xs-12 col-md-12 col-lg-12">
+      <b>Nome:</b>
+    </p>
+    <p>
+      <input type=text name="nome" class="col-md-12">
+    </p>
+    <p class="col-xs-12 col-md-12 col-lg-12">
+      <b>Email:</b>
+    </p>
+    <p>
+      <input type=text name="email" class="col-md-12">
+    </p>
+    <p class="col-xs-12 col-md-12 col-lg-12">
+      <b>Assunto:</b>
+    </p>
+    <p>
+      <input type=text name="assunto" class="col-md-12">
+    </p>
+    <p class="col-xs-12 col-md-12 col-lg-12">
+      <b>Mensagem:</b>
+    </p>
+    <p>
+      <textarea name="Mensagem" class="col-md-12 form-message" wrap="virtual"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Enviar Email"> <input type="reset" value="Limpar Formulário">
+    </p>
+  </form>
+</div>
